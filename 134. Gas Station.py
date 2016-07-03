@@ -34,3 +34,10 @@ class Solution(object):
             return j + 1
         else:
             return  -1
+
+
+if __name__ == "__main__":
+    print Solution().canCompleteCircuit([1, 2, 3], [3, 2, 1])
+    print Solution().canCompleteCircuit([1, 2, 3], [2, 2, 2])
+    print Solution().canCompleteCircuit([1, 2, 3], [1, 2, 3])
+    print Solution().canCompleteCircuit([1, 2, 3], [1, 2, 4])
