@@ -24,6 +24,7 @@ class Solution(object):
         for i in reversed(xrange(1, len(ratings))):
             if ratings[i - 1] > ratings[i] and candies[i - 1] <= candies[i]:
                 candies[i - 1] = candies[i] + 1
+        # print candies
         return reduce(lambda x, y: x+y, candies)
 
 
